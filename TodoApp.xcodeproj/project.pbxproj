@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		DADB1A7D2F2E2D290000DAE7 /* ElegantCalendar in Frameworks */ = {isa = PBXBuildFile; productRef = DADB1A7C2F2E2D290000DAE7 /* ElegantCalendar */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		DA0F4BBE2F2C580700C3270F /* TodoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TodoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -23,6 +27,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DADB1A7D2F2E2D290000DAE7 /* ElegantCalendar in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +70,7 @@
 			);
 			name = TodoApp;
 			packageProductDependencies = (
+				DADB1A7C2F2E2D290000DAE7 /* ElegantCalendar */,
 			);
 			productName = TodoApp;
 			productReference = DA0F4BBE2F2C580700C3270F /* TodoApp.app */;
@@ -94,6 +100,9 @@
 			);
 			mainGroup = DA0F4BB52F2C580600C3270F;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				DADB1A7B2F2E2D290000DAE7 /* XCRemoteSwiftPackageReference "ElegantCalendar" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = DA0F4BBF2F2C580700C3270F /* Products */;
 			projectDirPath = "";
@@ -320,6 +329,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		DADB1A7B2F2E2D290000DAE7 /* XCRemoteSwiftPackageReference "ElegantCalendar" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ThasianX/ElegantCalendar";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.3.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DADB1A7C2F2E2D290000DAE7 /* ElegantCalendar */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DADB1A7B2F2E2D290000DAE7 /* XCRemoteSwiftPackageReference "ElegantCalendar" */;
+			productName = ElegantCalendar;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = DA0F4BB62F2C580600C3270F /* Project object */;
 }

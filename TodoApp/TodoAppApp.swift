@@ -9,9 +9,15 @@ import SwiftUI
 
 @main
 struct TodoAppApp: App {
+    @StateObject private var repository = TodoRepository()
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            TodoListView(viewModel: TodoListViewModel(repository: repository))
         }
     }
+}
+
+#Preview {
+    TodoListView(viewModel: TodoListViewModel(repository:    TodoRepository()))
 }
